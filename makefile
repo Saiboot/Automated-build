@@ -1,8 +1,8 @@
 # -- General -- #
 CC       =gcc
-BDIR     =build
-ODIR     =obj
-IDIR     =inc
+BDIR     =src/build
+ODIR     =src/obj
+IDIR     =src/inc
 CFLAGS   =-lm -lSDL2 -std=c99
 
 # -- DEPS -- #
