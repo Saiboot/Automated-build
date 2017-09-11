@@ -13,7 +13,7 @@ OBJ   =$(patsubst %,$(ODIR)/%,$(_OBJ))
 
 all: files build_
 
-$(ODIR)/%.o: %.c $(DEPS)
+$(ODIR)/%.o: src/%.c $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS)
 
 build_: $(OBJ)
@@ -27,3 +27,4 @@ files:
 
 clean:
 	rm -f $(ODIR)/*.o
+
