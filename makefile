@@ -1,8 +1,8 @@
 # -- General -- #
 CC       =gcc
-BDIR     =src/build
-ODIR     =src/obj
-IDIR     =src/inc
+BDIR     =build
+ODIR     =obj
+IDIR     =inc
 CFLAGS   =-lm -lSDL2 -std=c99
 
 # -- DEPS -- #
@@ -13,7 +13,7 @@ OBJ   =$(patsubst %,$(ODIR)/%,$(_OBJ))
 
 all: files build_
 
-$(ODIR)/%.o: src/%.c $(DEPS)
+$(ODIR)/%.o: %.c $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS)
 
 build_: $(OBJ)
