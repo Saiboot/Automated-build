@@ -1,4 +1,4 @@
-Language: c
+language: c
 compiler: gcc
 os: linux
 
