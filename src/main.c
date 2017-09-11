@@ -1,5 +1,6 @@
 #include <SDL2/SDL.h>
 #include <stdio.h>
+#include "inc/dep.h"
 
 int main(int argc, char **argv)
 {
