@@ -22,4 +22,5 @@ before_install:
 - sudo apt-get install -y libsdl2-dev
 #- eval "${MATRIX_EVAL}"
 
-install: make get-deps
+install: make files
+install: make build_
