@@ -23,4 +23,4 @@ before_install:
 #- eval "${MATRIX_EVAL}"
 
 #install: make
-script: make
+script: make 'cd src'
